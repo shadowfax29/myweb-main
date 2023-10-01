@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>home/Freelancer-designer.developer</title>
+</head>
+
+<body>
+
+    <div id="menu-btn"
+        class="flex  w-8 h-8  bg-black  absolute top-0 rounded-full right-0 md:hidden justify-center items-center pt-2 pb-2">
+        <section class="w-6 h-6 border-2 border-white rounded-full flex justify-center items-center">
+            <section class=" w-4 h-4 border-2 border-white rounded-full "></section>
+        </section>
+    </div>
+
+    <div class="w-full h-full overflow-hidden">
+        <div id="preloader"
+            class="fixed top-0 left-0 w-full h-screen bg-black grid z-10 opacity-100 justify-center items-center">
+            <div class="loading">
+                <svg viewBox="0 0 187.3 93.7" height="200px" width="300px" class="svgbox">
+                    <defs>
+                        <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
+                            <stop stop-color="pink" offset="0%"></stop>
+
+                            <stop stop-color="blue" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <path stroke="url(#gradient)"
+                        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z">
+                    </path>
+                </svg>
+
+            </div>
+        </div>
+        <ul class="flex  w-full h-[50px] justify-center md:justify-end items-center invisible md:visible pl-6 pr-6"
+            id="menu-list">
+            <li class=" m-4 flex active:border-2 hover:border-blue-400 uppercase hover:animate-pulse text-sm "><a
+                    href="about.html">About</a></li>
+            <li class=" m-4 flex  active:border-2 hover:border-blue-400 uppercase hover:animate-pulse text-sm "><a
+                    href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="w-full h-16 flex flex-wrap justify-between  bottom-[31em] ">
+            <div class="w-48 h-16 bg-gray-300 rounded-tr-full rounded-br-full flex justify-around items-center">
+                <div class=" flex items-center font-semibold w-[108px]  ">located in the banglore..</div>
+                <div class="bg-black w-12 h-12 rounded-full flex justify-center items-center">
+                    <div class="animate-spin w-[30px] ">
+                        <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" viewBox="0 0 512 512"
+                            xml:space="preserve" fill="#f5f4f4" stroke="#f5f4f4">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #f8f7f7;
+                                    }
+                                </style>
+                                <g>
+                                    <path class="st0"
+                                        d="M463.203,105.688c-3.047-4.25-6.234-8.406-9.609-12.484C406.641,36.313,335.531,0,256,0 C176.484,0,105.359,36.313,58.406,93.203c-3.375,4.078-6.563,8.234-9.594,12.484C18.078,147.922,0,199.844,0,256 c0,56.313,18.156,108.484,49.031,150.719c3.125,4.328,6.406,8.563,9.844,12.656C105.844,475.922,176.719,512,256,512 c79.688,0,150.813-36.406,197.75-93.438c3.453-4.078,6.734-8.313,9.781-12.641C494.078,363.766,512,312,512,256 C512,199.844,493.922,147.922,463.203,105.688z M471.688,247.969H385.75c-0.625-32.563-5.031-63.438-12.5-91.219 c21.156-7.219,40.594-16.359,57.781-27.063C455.328,163.156,470.047,203.938,471.688,247.969z M263.984,41.906 c37.375,5.188,70.438,46.109,89.297,104.281c-27.469,7.828-57.594,12.406-89.297,13.094V41.906z M247.984,41.906v117.375 c-31.703-0.688-61.828-5.266-89.297-13.094C177.547,88.016,210.609,47.094,247.984,41.906z M247.984,175.266v72.703H142.219 c0.625-30.766,4.891-60.094,11.984-86.516C183.094,169.75,214.703,174.594,247.984,175.266z M247.984,263.969v72.703 c-33.234,0.797-64.828,5.734-93.703,14.094c-7.141-26.484-11.422-55.922-12.063-86.797H247.984z M247.984,352.656v117.375 c-37.297-5.172-70.313-45.938-89.188-103.938C186.625,358.031,216.734,353.453,247.984,352.656z M263.984,470.031V352.625 c31.703,0.563,61.859,5.094,89.359,12.875C334.5,423.813,301.406,464.844,263.984,470.031z M263.984,336.625v-72.656H369.75 c-0.625,30.625-4.859,59.859-11.891,86.188C328.938,341.938,297.281,337.188,263.984,336.625z M263.984,247.969v-72.703 c33.281-0.672,64.891-5.5,93.797-13.797c7.078,26.406,11.344,55.75,11.969,86.5H263.984z M421.281,117.203 c-15.656,9.547-33.344,17.703-52.563,24.266c-13.219-40.938-33.266-74-57.406-94.219 C354.906,58.797,393.156,83.609,421.281,117.203z M200.656,47.25c-24.141,20.234-44.188,53.281-57.406,94.203 c-19.188-6.563-36.891-14.703-52.531-24.25C118.844,83.625,157.063,58.813,200.656,47.25z M80.969,129.688 c17.188,10.703,36.609,19.828,57.75,27.063c-7.469,27.781-11.875,58.656-12.5,91.219H40.313 C41.953,203.938,56.688,163.156,80.969,129.688z M40.313,263.969h85.906c0.625,32.688,5.063,63.688,12.594,91.563 c-21.094,7.25-40.469,16.359-57.609,27.031C56.75,348.984,41.938,308.109,40.313,263.969z M91.125,395.203 c15.875-9.703,33.484-17.797,52.281-24.297c13.219,40.781,33.25,73.703,57.344,93.844 C157.344,453.25,119.219,428.594,91.125,395.203z M311.219,464.75c24.25-20.25,44.359-53.438,57.578-94.547 c19.281,6.547,37.047,14.719,52.734,24.281C393.313,428.234,354.938,453.156,311.219,464.75z M431.359,381.922 c-17.266-10.734-36.781-19.859-58.016-27.063c7.406-27.703,11.781-58.453,12.406-90.891h85.938 C470.078,307.859,455.5,348.438,431.359,381.922z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class=" z-10 grid h-16">
+
+                <h5 class=" pr-3 pl-3 text-xl">Freelancer<br> & Web Developer</h5>
+            </div>
+        </div>
+
+        <div class="w-full h-[44em] box-content relative overflow-hidden">
+            <div class=" w-[40em] h-[40em] bg-blue-400 absolute  bg-no-repeat bg-center bg-cover "
+                style=" border-radius:30% 70% 30% 30%; bottom:-40%; left:50%;  transform: translate(-50%,-50%); ">
+                <div class=" w-[30em] h-[30em] bg-blue-300 absolute  bg-no-repeat bg-center bg-cover z-99"
+                    style=" border-radius:10% 90% 10% 70%; bottom:-27%; left:50%;  transform: translate(-50%,-50%); ">
+                    <div class=" w-[20em] h-[20em] bg-blue-200 absolute  bg-no-repeat bg-center bg-cover z-99"
+                        style=" border-radius:30% 10% 30% 70%; bottom:-19%; left:50%;  transform: translate(-50%,-50%); ">
+
+                        <a href="index.html"><img class="transform hover:animate-ping cursor-pointer" src="IMG_7485-removebg-preview.png">
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+        <div class=" flex-wrap w-full h-[25em] pt-14 pb-14 capitalize bg-gray-300 flex justify-evenly">
+
+            <div class="text-sm sm:text-xl w-1/2 h-auto reveal p-2 md:text-3xl">helping brand to stand off in the
+                digital
+                era.together we will set
+                the
+                new
+                status quo.no
+                nonesense,always on the cutting edge.</div>
+
+
+            <div class="w-1/2 h-auto text-xs sm:text-lg md:text-xl capitalize  reveal p-2">The combination of my passion
+                for
+                design, code &
+                interaction
+                positions me in a unique place in
+                the web design world.
+
+
+            </div>
+            <a href="about.html">
+                <button id="button"
+                    class="shadow-lg   w-[5em] h-[5em] relative left-28 top-24 flex justify-center items-center rounded-full  border-gary-800 text-black overflow-hidden border-0  ">
+                    <span class="font-bold text-lg ">ABOUT ME</span>
+                </button></a>
+        </div>
+        <div class="w-full h-[40em] mt-12 rounded-b-[30%] bg-white overflow-hidden">
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray; width:80%;   display: block;
+              margin-top: 0.5em;
+              margin-bottom: 0.5em;
+              margin-left: auto;
+              margin-right: auto;
+              border-style: inset;
+              border-width: 1px;">
+            <div
+                class="pro min-w-xs w-full h-[8em] text-lg sm:text-3xl flex justify-around flex-wrap capitalize pl-[5em] pr-[5em] items-center sm:h-20">
+                <div class="reveal1">hostel room allocation</div>
+                <div class="text-sm reveal1 capitalize">design & development</div>
+            </div>
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray; width:80%;   display: block;
+              margin-top: 0.5em;
+              margin-bottom: 0.5em;
+              margin-left: auto;
+              margin-right: auto;
+              border-style: inset;
+              border-width: 1px;">
+            <div
+                class="pro min-w-xs w-full h-[8em] text-lg sm:text-3xl flex justify-around flex-wrap capitalize pl-[5em] pr-[5em] items-center sm:h-20">
+                <div class="reveal2">2D floor maper</div>
+                <div class="text-sm reveal2 capitalize">design </div>
+            </div>
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray; width:80%;   display: block;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 1px;">
+
+            <div
+                class=" min-w-xs w-full h-[8em] text-lg sm:text-3xl flex justify-around flex-wrap capitalize pl-[5em] pr-[5em] items-center sm:h-20">
+                <div class="reveal1">top college admission abroad</div>
+                <div class="text-sm reveal1 capitalize">design & development</div>
+            </div>
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray; width:80%;   display: block;
+                  margin-top: 0.5em;
+                  margin-bottom: 0.5em;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-style: inset;
+                  border-width: 1px;">
+            <div class="w-full h-[5em]  flex justify-center  capitalize pl-[5em] pr-[5em] items-center">
+                <a href="https://github.com/shadowfax29" target="_blank">
+                    <button class="w-36 h-12 rounded-full text-md bg-blue-400">more works</button>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="w-full h-[30em] bg-black relative up ">
+            <div class="w-full h-32 bg-black relative up flex justify-center items-center p-24">
+                <img class="w-32 h-32 rounded-full border-2 border-white p-2 " src="photo_2023-07-22_14-41-06.jpg">
+                <div class="w-1/2 h-32 m-6 text-white text-2xl sm:text-4xl md:text-6xl ">Let's work <br> together</div>
+            </div>
+            <hr style="height:1px;border-width:0;color:white;background-color:white; width:80%;   display: block;
+          margin-top: 0.5em;
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: inset;
+          border-width: 1px;">
+            <div class="details w-full h-auto flex justify-evenly items-center flex-wrap">
+
+                <a href="mailto:ravi.kumargowda2429@gmail.com">
+                    <button class="mail rounded-full">ravi.kumargowda2429@gmail.com</button>
+                </a>
+
+                <a href="contact.html"><button class="get m-2">get-in-touch</button></a>
+            </div>
+            <div class="footer w-full text-white flex   mt-5 justify-around flex-wrap">
+                <div class="time">local time
+                    <p id="live-time"></p>
+                </div>
+                <div class="social grid">
+                    <h8 class="text-gray-500">socials</h8>
+
+
+                    <ul class="flex z-50 text-sm ">
+                        <li class="list-none mr-1 cursor-pointer ">
+
+                            <a href="https://github.com/shadowfax29" target="_blank">Github</a>
+                        </li>
+                        <li class="list-none mr-1 cursor-pointer " id="linked">
+                            <a href="https://linkedin.com/in/ravi-kumar-92b354247" target="_blank">Linkedin</a>
+                        </li>
+                        <li class="list-none cursor-pointer " id="ui">
+
+                            <a href="https://uiverse.io/profile/shadowfax29" target="_blank">Ui-verse</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

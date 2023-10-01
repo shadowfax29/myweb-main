@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>contact/Freelancer-designer.developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+
+<body>
+  <div id="menu-btn"
+        class="flex  w-8 h-8  bg-white  absolute top-0 rounded-full right-0 md:hidden justify-center items-center pt-2 pb-2">
+        <section class="w-6 h-6 border-2 border-black rounded-full flex justify-center items-center"><section class=" w-4 h-4 border-2 border-black rounded-full "></section></section>
+        
+      
+    </div>
+  <div id="preloader"
+    class="fixed top-0 left-0 w-full h-screen bg-black grid z-10 opacity-100 justify-center items-center">
+    <div class="loading">
+      <svg viewBox="0 0 187.3 93.7" height="200px" width="300px" class="svgbox">
+        <defs>
+          <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
+            <stop stop-color="pink" offset="0%"></stop>
+
+            <stop stop-color="blue" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+
+        <path stroke="url(#gradient)"
+          d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z">
+        </path>
+      </svg>
+
+    </div>
+  </div>
+  <div class="w-full h-full overflow-hidden bg-black text-white">
+    <div class="w-full h-14 shadow-sm flex justify-between items-center pl-6 pr-6 mt-4 md:mt-0 " id="page">
+      <p class=" w-52 md:text-sm text-xs">&copy;code by ravi</p>
+
+      <ul class="flex   w-full h-[50px] justify-end items-center invisible md:visible text-sm" id="menu-list">
+
+        <li class="m-2  lg:flex  active:border-2 hover:border-blue-400 uppercase hover:animate-pulse "><a
+            href="index.html">home</a>
+        </li>
+        <li class="m-2  lg:flex active:border-2 hover:border-blue-400 uppercase hover:animate-pulse "><a
+            href="about.html">About</a></li>
+        <li class="m-2  lg:flex  active:border-2 hover:border-blue-400 uppercase hover:animate-pulse "><a
+            href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="con w-full h-auto">
+      <div class="md:text-6xl w-full h-[9rem] flex justify-around mt-24 text-4xl items-center ">Let's start a<br>
+        project together <img class="w-32 h-32 rounded-full   p-2 " src="photo_2023-07-22_14-41-06.jpg">
+      </div>
+      <hr style="height:0.5px;border-width:0;color:gray !important; background-color:gray !important; width:40%;   display: block;
+        margin-top: 5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;">
+      <div class="grid mx-auto w-auto justify-center h-[10em]">
+
+
+        <label class="text-base md:text-2xl flex items-center">
+          <p class="text-sm text-gray-700 mr-5">01</p> What's your name?
+        </label>
+        <input class="ml-10 mb-2 bg-transparent text-base md:text-2xl " type="text" placeholder="Jhon*" id="name">
+      </div>
+      <hr style="height:0.5px;border-width:0;color:gray !important; background-color:gray !important; width:40%;   display: block;
+         
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: inset;
+          border-width: 1px;">
+      <div class="grid mx-auto w-auto justify-center h-[10em]">
+
+
+        <label class="text-base md:text-2xl flex items-center">
+          <p class="text-sm text-gray-700 mr-5">02</p>What's your email?
+        </label>
+        <input class="ml-10 mb-2 bg-transparent text-base md:text-2xl " type="text" placeholder="Jhon@email.com*" id="name">
+      </div>
+      <hr style="height:0.5px;border-width:0;color:gray !important; background-color:gray !important; width:40%;   display: block;
+        
+            margin-bottom: 0.5em;
+              margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;">
+      <div class="grid mx-auto w-auto justify-center h-[10em]">
+
+
+        <label class="text-base md:text-2xl flex items-center">
+          <p class="text-sm text-gray-700 mr-5">03</p> What's the name of your organization?
+        </label>
+        <input class="ml-10 mb-2 bg-transparent text-base md:text-2xl" type="text" placeholder="Jhon & Doe " id="name">
+      </div>
+      <hr style="height:0.5px;border-width:0;color:gray !important; background-color:gray !important; width:40%;   display: block;
+             
+              margin-bottom: 0.5em;
+                margin-left: auto;
+              margin-right: auto;
+              border-style: inset;
+              border-width: 1px;">
+      <div class="grid mx-auto w-auto justify-center h-[10em]">
+
+
+        <label class="text-base md:text-2xl flex items-center">
+          <p class="text-sm text-gray-700 mr-5">04</p> What services are you looking for?
+        </label>
+        <input class="ml-10 mb-2 bg-transparent text-base md:text-2xl " type="text" placeholder="Web design, web developement..."
+          id="name">
+      </div>
+      <hr style="height:0.5px;border-width:0;color:gray !important; background-color:gray !important; width:40%;   display: block;
+            
+                margin-bottom: 0.5em;
+                  margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 1px;">
+      <div class="grid mx-auto w-auto justify-center h-[10em]">
+
+
+        <label class="text-base md:text-2xl flex items-center">
+          <p class="text-sm text-gray-700 mr-5">05</p>Your message
+        </label>
+        <input class="ml-10 mb-2 bg-transparent text-base md:text-2xl " type="text" placeholder="hello ravi,can you help me with..."
+          id="name">
+      </div>
+      <div class="flex justify-center w-full h-auto">
+        <button class="w-32 h-32 bg-blue-500 rounded-full">send it</button>
+      </div>
+    </div>
+    <div class="footer w-full text-white flex mt-[3rem]  justify-around">
+      <div class="time">local time
+        <p id="live-time"></p>
+      </div>
+      <div class="social grid">
+        <h8 class="text-gray-500">socials</h8>
+
+
+        <ul class="flex z-50 text-sm">
+          <li class="list-none mr-2 cursor-pointer ">
+
+            <a href="https://github.com/shadowfax29" target="_blank">Github</a>
+          </li>
+          <li class="list-none mr-2 cursor-pointer " id="linked">
+            <a href="https://linkedin.com/in/ravi-kumar-92b354247" target="_blank">Linked-in</a>
+          </li>
+          <li class="list-none cursor-pointer " id="ui">
+
+            <a href="https://uiverse.io/profile/shadowfax29" target="_blank">Ui-verse</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="src/index.js">
+
+
+  </script>
+
+</body>
+
+</html>

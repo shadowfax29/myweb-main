@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Onest:wght@200&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+font-family: 'Onest', sans-serif;
+}
+.hide{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.svgbox {
+  --blue: rgb(148, 66, 63);
+  stroke: var(--blue);
+  stroke-width: 5;
+  fill: none;
+  stroke-dasharray: 50, 14;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 1;
+  }
+
+  to {
+    stroke-dashoffset: 1;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+  
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal1{
+  position: relative;
+  transform: translatex(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal1.active{
+  transform: translatex(0);
+  opacity: 1;
+}
+.reveal2{
+  position: relative;
+  transform: translatex(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal2.active{
+  transform: translatex(0);
+  opacity: 1;
+}
+.up{
+ 
+  opacity: 0;
+  transform: translateY(-300px);
+  transition: 3s all ease;
+  z-index: -9;
+}
+
+.up.active{
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 0;
+}
+ #button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+ }
+ 
+ #button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+ }
+
+ 
+ #button:hover span {
+  color: white;
+  z-index: 99;
+  animation: scaleUp 0.3s ease-in-out;
+ }
+
+
+
+ @keyframes scaleUp {
+  0% {
+   transform: scale(1);
+  }
+ 
+  50% {
+   transform: scale(0.95);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
+ 
+.get:hover{
+  transform: skewY(0deg);
+  cursor: pointer;
+}
+
+.get{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+  border-radius: 50%;
+}
+.mail{
+  min-width:300px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  height: 50px;
+}
+ 
+@media screen and(max-width:350px) {
+  .pro{
+    height: 8rem;
+  }
+}
+
+
